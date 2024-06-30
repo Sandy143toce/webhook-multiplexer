@@ -8,7 +8,6 @@ Webhook Multiplexer is a Go-based application that allows you to create and mana
 3. [Configuration](#configuration)
 4. [Running the Application](#running-the-application)
 5. [API Documentation](#api-documentation)
-6. [Database Schema](#database-schema)
 
 ## Prerequisites
 
