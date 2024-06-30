@@ -33,7 +33,7 @@ func main() {
 
 	setup.SetupRoutes(app)
 
-	port := "9000"
+	port := "8000"
 	if port == "" {
 		port = "3000" // Provide a default port if one isn't supplied
 	}
