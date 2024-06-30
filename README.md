@@ -68,10 +68,12 @@ The application provides the following API endpoints:
 - Body:
   ```json
   {
-    "name": "string",
-    "url": "string"
+    "name": "webhook1",
+    "url": "http://localhost:9000/webhook-multiplexer/send-event"
   }
   ```
+
+![Alt text](/webhook.png "Create Webhook")
 
 2. Map Endpoint to Master Webhook
 - Method: POST
@@ -79,10 +81,13 @@ The application provides the following API endpoints:
 - Body:
   ```json
   {
-    "webhook_id": "string",
-    "url": "string"
+    "webhook_id": "id returned by create webhook api",
+    "url": "any_url"
   }
   ```
+
+ ![Alt text](/endpoint.png "Create Webhook")
+ 
 
 3. Send Event/Webhook Forwarding
 - Method: POST
@@ -90,9 +95,12 @@ The application provides the following API endpoints:
 - Body:
   ```json
   {
-    "event_name": "string",
+    "event_name": "event1",
     "metadata": json, // can send any data its optional
   }
   ```
+
+ ![Alt text](/event.png "Create Webhook")
+
 
 
