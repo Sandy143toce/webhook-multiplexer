@@ -47,13 +47,13 @@ The application uses environment variables for configuration. These are set in t
 ```
 docker-compose up --build
 ```
-2. Once docker-compose is up and running, you need to run the migrations to create the tables in the database. You can do this by running the following command:
+2. Once docker-compose is up and running, you need to run the migrations to create the tables in the database. 
+First Replace the Database Variables like DB User, DB Password, DB Name, DB Host, DB Port in the URL in apply.sh file in schema folder.
+Then Give Acces to the apply.sh file by running the command chmod +x apply.sh. Then run the below command to apply the migrations.
 
 ```
 cd schema
-Replace the Database Variables like DB User, DB Password, DB Name, DB Host, DB Port in the URL in apply.sh file
-Give Acces to the apply.sh file by running the command chmod +x apply.sh
-Run the apply.sh file by running the command ./apply.sh
+./apply.sh
 ```
 
 3. The application will be available at `http://localhost:9000`
