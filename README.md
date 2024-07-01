@@ -14,6 +14,7 @@ Webhook Multiplexer is a Go-based application that allows you to create and mana
 - Go 1.21.4 or later
 - Docker and Docker Compose
 - PostgreSQL 15.0 or later
+- [atlas-cli 0.1.0 or later](https://atlasgo.io/)
 
 ## Installation
 
